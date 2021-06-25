@@ -1,3 +1,13 @@
+/* RESET 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}*/
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -9,7 +19,7 @@ body {
 .fisrtHeader p {
     margin: 0px;
     padding: 5px;
- }
+}
 
 .secondHeader {
     background-color: #00669F;
