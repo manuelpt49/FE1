@@ -1,0 +1,259 @@
+/* RESET 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+.fisrtHeader {
+    background-color: #1CD1B0;
+    margin: 0;
+}
+.fisrtHeader p {
+    margin: 0px;
+    padding: 2px 2px 2px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.secondHeader {
+    background-color: #00669F;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.secondHeader h1 {
+    margin: 0px;
+    padding: 5px;
+    color: white;
+ }
+
+
+.first-container{
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.cards {
+    display: inline-block;
+    width: 280px;
+    position: relative;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    margin: 5px 15px 60px 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.fondo {
+    width: 100%
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 110px;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+.textP {
+    text-align: left;
+    margin: 20px;
+    font-size: 14;
+}
+
+button {
+    background-color: #00669F;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    margin: 10px;
+}
+
+i {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 15px;
+    top: 15px;
+    color: red;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #00669F;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#circleIcon {
+    color: #00669F;
+    position: fixed;
+    top: 50%;
+    left: calc(95% - 15px);
+    z-index: 10;
+}
+
+
+@media (max-width: 1024px) {
+    .cards{
+        width: 260px;
+    }
+    
+}
+
+@media (max-width: 764px) {
+    #git {
+        width: 100px;
+        position: static;
+        margin-top: 20px;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #git {
+        width: 80px;
+    }
+    #circleIcon {
+        left: calc(90% - 20px);
+    }
+}
+
+
+
+/* Styles login */
+header img {
+    width: 64px;
+    height: 50px;
+}
+
+header h1 {
+    padding: 4px;
+}
+
+.form{
+    display: flex;
+    height: 80vh;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+}
+.formDiv {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.formDiv h2 {
+    font-size: 40px;
+    font-weight:900;
+}
+.form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form form input {
+    width: 96%;
+    height: 25px;
+    margin: 8px 0;
+    border-color: black;
+    border-width: 1px;
+    padding: 6px 0 6px 10px;
+}
+
+.form form button {
+    background-color: #1CD1B0;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    margin: 28px 0 10px;
+}
+
+.form form span {
+    font-size: 14px;
+    text-align: center;
+    color: #00669F;
+}
+
+.form form select {
+    width: 99%;
+    height: 35px;
+    margin: 8px 0;
+    border-color: black;
+    border-width: 1px;
+    padding: 6px 0 6px 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+#Reset {
+    background-color: #888888;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    margin: 28px 0 10px;
+    width: 170px;
+}
+
+#Regist {
+    background-color: #1CD1B0;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    margin: 28px 0 10px;
+    width: 170px;
+}
+
+#ingreso {
+    color: black;
+}
+
+#mensaje {
+    border-color: black;
+    margin-top: 6px;
+}
