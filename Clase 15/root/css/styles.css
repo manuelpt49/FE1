@@ -188,11 +188,19 @@ button {
     align-items: center;
 }
 
+.horizontal h3 {
+    margin-left: 25px;
+}
+
+.horizontal h3::before {
+    content: url(/img/pawprint\ 1.png);
+}
+
 #suscription1 {
-   width: 100%;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #suscription1 h3 {

@@ -1,108 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/97771ea7e8.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="fisrtHeader">
-        <p>Descuentos 20% en todos los productos</p>
-      </div>
-      <div class="secondHeader">
-        <img src="/img/logo 1.png" alt="" />
-        <h1>Heroes Store</h1>
-      </div>
-    </header>
-    <section class="addSuperSection">
-      <div class="addSuper">
-        <div class="titleForm">
-          <p id="mainTitle">Añade tu super!</p>
-          <p id="secondTitle">
-            Agrega tu personaje favorito completando las opciones
-          </p>
-        </div>
-        <div class="alignVerticalForm">
-          <div class="alignHorizontalForm">
-            <div class="alignVerticalForm1">
-              <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" />
-              <label for="fecha">Fecha</label>
-              <input type="date" name="fecha" id="fecha" />
-              <textarea
-                name="descripcion"
-                id="descripcion"
-                placeholder="Descripción"
-                cols="30"
-                rows="15"
-              ></textarea>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script
+            src="https://kit.fontawesome.com/97771ea7e8.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="fisrtHeader">
+                <p>Descuentos 20% en todos los productos</p>
             </div>
-            <div class="alignVerticalForm1">
-              <label for="especie">Especie</label>
-              <input type="text" name="especie" id="especie" />
-              <label for="foto" class="foto">Agregar Foto</label>
-              <input type="file" name="foto" id="foto" />
+            <div class="secondHeader">
+                <a href="/index.html">
+                    <img src="/img/logo 1.png" alt="" />
+                </a>
+                <h1>Heroes Store</h1>
+            </div>
+            <div class="thirdHeader">
+                <a href="/contacto.html">Contacto</a>
+                <a href="/registro.html">Registrarme</a>
+                <a href="/login.html">Ingresar</a>
+            </div>
+        </header>
+        <section class="addSuperSection">
+            <div class="addSuper">
+                <div class="titleForm">
+                    <p id="mainTitle">¡Añade tu súper!</p>
+                    <p id="secondTitle">
+                        Agrega tu personaje favorito completando las opciones.
+                    </p>
+                </div>
+                <div class="alignVerticalForm">
+                    <div class="alignHorizontalForm">
+                        <div class="alignVerticalForm1">
+                            <label for="nombre" id="labelNombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" />
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="fecha" id="fecha" />
+                            <textarea
+                                name="descripcion"
+                                id="descripcion"
+                                placeholder="Descripción"
+                                cols="30"
+                                rows="15"
+                            ></textarea>
+                        </div>
+                        <div class="alignVerticalForm1">
+                            <label for="especie" id="labelEspecie"
+                                >Especie</label
+                            >
+                            <select id="especie">
+                                <option value="" disable selected hidden>
+                                    Seleccionar opción
+                                </option>
+                                <option value="Alienigena">Alienigena</option>
+                                <option value="Animal">Animal</option>
+                                <option value="Unknown">Unknown</option>
+                            </select>
 
-              <div class="alignVerticalForm2">
-                <label for="poderes">Poderes</label>
-                <label id="checkRadio">
-                  <input type="checkbox" name="poderes" id="volar" />Volar
-                </label>
-                <label id="checkRadio">
-                  <input
-                    type="checkbox"
-                    name="poderes"
-                    id="superinteligencia"
-                  />Superinteligencia
-                </label>
-                <label id="checkRadio">
-                  <input type="checkbox" name="poderes" id="rayoLaser" />Vista
-                  de rayo láser
-                </label>
-                <label id="checkRadio">
-                  <input
-                    type="checkbox"
-                    name="poderes"
-                    id="billetera"
-                  />Billetera gorda
-                </label>
-              </div>
-              <hr />
-              <div class="alignVerticalForm2">
-                <label for="tipoPersonaje">Tipo de personaje</label>
-                <label id="checkRadio">
-                  <input type="radio" name="tipoPersonaje" id="heroe" />Héroe /
-                  Heroina
-                </label>
-                <label id="checkRadio">
-                  <input
-                    type="radio"
-                    name="tipoPersonaje"
-                    id="superinteligencia"
-                  />Villano / Villana
-                </label>
-              </div>
+                            <label for="foto" class="foto">Agregar Foto</label>
+                            <input type="file" name="foto" id="foto" />
+
+                            <div class="alignVerticalForm2">
+                                <label for="poderes">Poderes</label>
+                                <label id="checkRadio">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        id="volar"
+                                    />Volar
+                                </label>
+                                <label id="checkRadio">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        id="superinteligencia"
+                                    />Superinteligencia
+                                </label>
+                                <label id="checkRadio">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        id="rayoLaser"
+                                    />Vista de rayo láser
+                                </label>
+                                <label id="checkRadio">
+                                    <input
+                                        type="checkbox"
+                                        name="poderes"
+                                        id="billetera"
+                                    />Billetera gorda
+                                </label>
+                            </div>
+                            <hr />
+                            <div class="alignVerticalForm2">
+                                <label for="tipoPersonaje"
+                                    >Tipo de personaje</label
+                                >
+                                <label id="checkRadio">
+                                    <input
+                                        type="radio"
+                                        name="tipoPersonaje"
+                                        id="heroe"
+                                    />Héroe / Heroina
+                                </label>
+                                <label id="checkRadio">
+                                    <input
+                                        type="radio"
+                                        name="tipoPersonaje"
+                                        id="superinteligencia"
+                                    />Villano / Villana
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="anadir">Añadir</button>
             </div>
-          </div>
-        </div>
-        <button id="anadir">Añadir</button>
-      </div>
-    </section>
-    <footer>
-      <section>Todos los derechos reservados a FRONT END 1</section>
-    </footer>
-  </body>
+        </section>
+        <footer>
+            <section>Todos los derechos reservados a FRONT END 1</section>
+        </footer>
+    </body>
 </html>
