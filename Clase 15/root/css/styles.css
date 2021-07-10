@@ -193,7 +193,7 @@ button {
 }
 
 .horizontal h3::before {
-    content: url(/img/pawprint\ 1.png);
+    content: url(../img/pawprint\ 1.png)
 }
 
 #suscription1 {
