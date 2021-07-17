@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #38454f0c;
+}
+
+nav {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav #logo {
+    padding-left: 0.3rem;
+}
+
+nav #menu {
+    padding-right: 0.3rem;
+    width: 30px;
+    height: 25px;
+}
+nav .menu2 {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.banner {
+    background-image: url("/root/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h2 {
+    color: white;
+    font-size: 35px;
+    padding: 1.5rem
+}
+.banner span {
+    color: red;
+}
+.banner button {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    padding: 8px 25px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 0.2rem;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h3 {
+    font-weight: 200;
+    font-weight: 800;
+    padding: 20px 0 5px 0
+}
+
+.card {
+    padding: 1rem 2rem 1.5rem 2rem;
+    background-color: white;
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card hr {
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-color: rgba(0, 0, 0, 0.282)
+}
+
+.card .money {
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.card .pays {
+    font-size: 16px;
+}
+
+.card .delivery {
+    color: #619D00;
+    font-size: 12px;
+}
+
+.estrellas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.estrellas .sillas {
+    background-image: url("/root/img/banner\ 1.png");
+    background-size: cover;
+    width: 350px;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 0.6rem;
+}
+
+.estrellas .computadoras {
+    background-image: url("/root/img/banner\ 2.png");
+    background-size: cover;
+    width: 350px;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 0.6rem;
+}
+
+.sillas p, .computadoras p{
+    color: white;
+    padding-right: 10px;
+}
+
+.social-media {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media img {
+    padding: 15px 0;
+}
+
+.social-media p {
+    font-size: 24px;
+    color: white;
+}
+
+.icons img {
+    margin: 0 15px
+}
+
+.rights {
+    background-color: #C4C4C4;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+@media (min-width:768px){
+    nav .menu2 {
+        display: flex;
+    }
+
+    nav .menu2 p{
+       margin-left: 25px;
+    }
+    nav .menu2 img{
+        margin-left: 25px;
+     }
+
+    nav #menu {
+        display: none;
+    }
+
+    .destacados .containerCards{
+        display: flex;
+        justify-content: space-around;
+        width: 85vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .estrellas div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .estrellas .sillas, .estrellas .computadoras {
+        margin: 0 20px;
+    }
+
+    .social-media {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-media-icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #logoFooter {
+        padding: 35px;
+    }
+
+    
+}
