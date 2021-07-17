@@ -34,7 +34,7 @@ nav .menu2 {
 }
 
 .banner {
-    background-image: url("/root/img/banner.png");
+    background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -116,7 +116,7 @@ h3 {
 }
 
 .estrellas .sillas {
-    background-image: url("/root/img/banner\ 1.png");
+    background-image: url("../img/banner\ 1.png");
     background-size: cover;
     width: 350px;
     height: 120px;
@@ -128,7 +128,7 @@ h3 {
 }
 
 .estrellas .computadoras {
-    background-image: url("/root/img/banner\ 2.png");
+    background-image: url("../img/banner\ 2.png");
     background-size: cover;
     width: 350px;
     height: 120px;
